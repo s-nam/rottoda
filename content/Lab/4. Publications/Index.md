@@ -10,10 +10,5 @@ longform:
     - Patents
   sceneTemplate: templates/chapter.md
   ignoredFiles:
-    - Journals
-    - Patents
-    - Conferences & Demos
-    - Journals
-    - Patents
-    - Conferences & Demos
+    - Index
 ---

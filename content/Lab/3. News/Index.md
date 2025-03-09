@@ -9,8 +9,4 @@ longform:
     - Field Trips
   sceneTemplate: templates/chapter.md
   ignoredFiles:
-    - Awards
-    - Field Trips
-    - Awards
-    - Field Trips
----
+    - Index

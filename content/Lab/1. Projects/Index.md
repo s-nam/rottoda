@@ -9,8 +9,5 @@ longform:
     - Past Projects
   sceneTemplate: templates/chapter.md
   ignoredFiles:
-    - Current Projects
-    - Past Projects
-    - Current Projects
-    - Past Projects
+    - Index
 ---
