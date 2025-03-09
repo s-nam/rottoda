@@ -9,5 +9,11 @@ longform:
     - Patents
     - Conferences & Demos
   sceneTemplate: templates/chapter.md
-  ignoredFiles: []
+  ignoredFiles:
+    - Journals
+    - Patents
+    - Conferences & Demos
+    - Journals
+    - Patents
+    - Conferences & Demos
 ---

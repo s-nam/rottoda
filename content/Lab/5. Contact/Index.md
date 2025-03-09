@@ -8,5 +8,9 @@ longform:
     - Location
     - Recruitments
   sceneTemplate: templates/chapter.md
-  ignoredFiles: []
+  ignoredFiles:
+    - Location
+    - Recruitments
+    - Location
+    - Recruitments
 ---

@@ -1,5 +1,5 @@
 ---
-title: Robot Tactile Data Laboratory at KNU
+title: Robot Touch Data Laboratory at KNU
 draft: false
 tags:
   - KNU
@@ -8,7 +8,7 @@ tags:
   - Robot
   - Haptics
 ---
-- This is Robot Tactile Data Lab in the Graduate School of Data Science at Kyungpook National University.
+- This is Robot Touch Data Lab in the Graduate School of Data Science at Kyungpook National University.
 
 > [!note] Lab News
 > - Lab website opened (September 21, 2024)

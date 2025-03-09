@@ -9,5 +9,11 @@ longform:
     - Students
     - Alumni
   sceneTemplate: templates/chapter.md
-  ignoredFiles: []
+  ignoredFiles:
+    - PI
+    - Students
+    - Alumni
+    - PI
+    - Students
+    - Alumni
 ---
