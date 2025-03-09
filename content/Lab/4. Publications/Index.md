@@ -6,8 +6,8 @@ longform:
   sceneFolder: /
   scenes:
     - Journals
-    - Patents
     - Conferences & Demos
+    - Patents
   sceneTemplate: templates/chapter.md
   ignoredFiles:
     - Journals

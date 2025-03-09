@@ -1,7 +1,7 @@
 ---
 longform:
   format: scenes
-  title: 2. Members
+  title: 2_Members
   workflow: Default Workflow
   sceneFolder: /
   scenes:
@@ -9,11 +9,5 @@ longform:
     - Students
     - Alumni
   sceneTemplate: templates/chapter.md
-  ignoredFiles:
-    - PI
-    - Students
-    - Alumni
-    - PI
-    - Students
-    - Alumni
+  ignoredFiles: []
 ---
