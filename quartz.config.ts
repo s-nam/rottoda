@@ -8,7 +8,7 @@ import * as Plugin from "./quartz/plugins"
  */
 const config: QuartzConfig = {
   configuration: {
-    pageTitle: `https://${cfg.baseUrl}/static/rottoda_logo.png`,
+    pageTitle: "Rottoda@KNU",
     pageTitleSuffix: "",
     enableSPA: true,
     enablePopovers: true,
