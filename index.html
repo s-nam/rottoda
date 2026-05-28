@@ -11,7 +11,7 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=Nanum+Myeongjo:wght@400;700;800&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Sans+KR:wght@400;500;600&display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Roboto+Slab:wght@300;400;500;700&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet" />
 
 <style>
   :root {
@@ -20,16 +20,15 @@
     --navy-deep: #14213f;
     --gold: #d4af5a;
     --gold-soft: #e3c886;
-    --ink: #1d2333;
-    --muted: #5b6478;
-    --line: #e7ebf2;
-    --bg: #fbfcfe;
+    --ink: #1c1c1c;
+    --muted: #5f6672;
+    --line: #ededed;
+    --bg: #ffffff;
     --card: #ffffff;
     --accent: #3a6ebe;
-    --serif: "Newsreader", "Nanum Myeongjo", Georgia, serif;
-    --serif-ko: "Nanum Myeongjo", "Newsreader", serif;
-    --sans: "IBM Plex Sans", "IBM Plex Sans KR", system-ui, sans-serif;
-    --sans-ko: "IBM Plex Sans KR", "IBM Plex Sans", system-ui, sans-serif;
+    --slab: "Roboto Slab", Georgia, serif;
+    --sans: "Roboto", "Noto Sans KR", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    --sans-ko: "Noto Sans KR", "Roboto", -apple-system, BlinkMacSystemFont, sans-serif;
   }
 
   * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -40,8 +39,7 @@
     font-family: var(--sans);
     color: var(--ink);
     background:
-      radial-gradient(1100px 540px at 88% -8%, rgba(58,110,190,0.07), transparent 60%),
-      radial-gradient(900px 500px at 6% 108%, rgba(40,62,110,0.06), transparent 55%),
+      radial-gradient(900px 460px at 88% -10%, rgba(58,110,190,0.05), transparent 60%),
       var(--bg);
     min-height: 100vh;
     display: flex;
@@ -132,21 +130,22 @@
     font-weight: 600;
   }
   .band-text h1 {
-    font-family: var(--serif);
+    font-family: var(--slab);
     font-weight: 500;
-    font-size: 24px;
-    line-height: 1.2;
-    margin-top: 4px;
-    letter-spacing: 0.01em;
+    font-size: 23px;
+    line-height: 1.25;
+    margin-top: 5px;
+    letter-spacing: 0;
   }
 
   /* ===== Body ===== */
   .body { padding: 34px 34px 8px; }
 
   .lead {
-    font-family: var(--serif);
-    font-size: 21px;
-    line-height: 1.5;
+    font-family: var(--slab);
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.55;
     color: var(--ink);
   }
   .lead .host {
@@ -237,7 +236,7 @@
     color: var(--muted);
   }
   .countdown .num {
-    font-family: var(--serif);
+    font-family: var(--slab);
     font-weight: 600;
     color: var(--navy);
     font-size: 15px;
