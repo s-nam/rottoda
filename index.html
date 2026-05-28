@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+<title>Redirecting to rottoda.com · 로봇촉각데이터 연구실</title>
+<meta name="description" content="This page has moved to rottoda.com. 이 페이지는 rottoda.com 으로 이동합니다." />
+
+<!-- Auto redirect after a short delay -->
+<meta http-equiv="refresh" content="6; url=https://rottoda.com/" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=Nanum+Myeongjo:wght@400;700;800&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Sans+KR:wght@400;500;600&display=swap" rel="stylesheet" />
+
+<style>
+  :root {
+    --navy: #283e6e;
+    --navy-dark: #1c2c54;
+    --navy-deep: #14213f;
+    --gold: #d4af5a;
+    --gold-soft: #e3c886;
+    --ink: #1d2333;
+    --muted: #5b6478;
+    --line: #e7ebf2;
+    --bg: #fbfcfe;
+    --card: #ffffff;
+    --accent: #3a6ebe;
+    --serif: "Newsreader", "Nanum Myeongjo", Georgia, serif;
+    --serif-ko: "Nanum Myeongjo", "Newsreader", serif;
+    --sans: "IBM Plex Sans", "IBM Plex Sans KR", system-ui, sans-serif;
+    --sans-ko: "IBM Plex Sans KR", "IBM Plex Sans", system-ui, sans-serif;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  html, body { height: 100%; }
+
+  body {
+    font-family: var(--sans);
+    color: var(--ink);
+    background:
+      radial-gradient(1100px 540px at 88% -8%, rgba(58,110,190,0.07), transparent 60%),
+      radial-gradient(900px 500px at 6% 108%, rgba(40,62,110,0.06), transparent 55%),
+      var(--bg);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 32px 20px;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  /* faint grid texture */
+  body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background-image:
+      linear-gradient(rgba(40,62,110,0.035) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(40,62,110,0.035) 1px, transparent 1px);
+    background-size: 56px 56px;
+    mask-image: radial-gradient(circle at 50% 40%, #000 0%, transparent 78%);
+    -webkit-mask-image: radial-gradient(circle at 50% 40%, #000 0%, transparent 78%);
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  .card {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    max-width: 620px;
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 18px;
+    box-shadow:
+      0 1px 0 rgba(255,255,255,0.6) inset,
+      0 24px 60px -28px rgba(20,33,63,0.35),
+      0 6px 18px -10px rgba(20,33,63,0.18);
+    overflow: hidden;
+    animation: rise 0.7s cubic-bezier(0.22, 1, 0.36, 1) both;
+  }
+
+  @keyframes rise {
+    from { opacity: 0; transform: translateY(16px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+
+  /* ===== Header band — major-header style ===== */
+  .band {
+    display: flex;
+    align-items: stretch;
+    background: linear-gradient(135deg, var(--navy) 0%, var(--navy-deep) 100%);
+    color: #fff;
+    padding: 26px 30px 30px;
+    position: relative;
+  }
+  .band::after {
+    content: "";
+    position: absolute;
+    left: 0; right: 0; bottom: 0;
+    height: 4px;
+    background: linear-gradient(90deg, var(--gold) 0%, var(--gold-soft) 38%, rgba(212,175,90,0) 100%);
+  }
+  .mark {
+    flex: 0 0 auto;
+    width: 56px; height: 56px;
+    border-radius: 12px;
+    background: linear-gradient(180deg, rgba(255,255,255,0.16), rgba(255,255,255,0.04));
+    border: 1px solid rgba(255,255,255,0.22);
+    position: relative;
+    display: grid;
+    place-items: center;
+    margin-right: 18px;
+  }
+  .mark::before {
+    content: "";
+    position: absolute;
+    left: 0; top: 8px; bottom: 8px;
+    width: 4px;
+    border-radius: 4px;
+    background: var(--gold);
+  }
+  .mark svg { width: 26px; height: 26px; display: block; }
+  .band-text .eyebrow {
+    font-size: 11px;
+    letter-spacing: 0.28em;
+    text-transform: uppercase;
+    color: var(--gold-soft);
+    font-weight: 600;
+  }
+  .band-text h1 {
+    font-family: var(--serif);
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.2;
+    margin-top: 4px;
+    letter-spacing: 0.01em;
+  }
+
+  /* ===== Body ===== */
+  .body { padding: 34px 34px 8px; }
+
+  .lead {
+    font-family: var(--serif);
+    font-size: 21px;
+    line-height: 1.5;
+    color: var(--ink);
+  }
+  .lead .host {
+    color: var(--navy);
+    font-weight: 600;
+    border-bottom: 2px solid var(--gold);
+    padding-bottom: 1px;
+    white-space: nowrap;
+  }
+
+  /* bilingual blocks */
+  .langs {
+    margin-top: 24px;
+    display: grid;
+    gap: 16px;
+  }
+  .lang {
+    display: grid;
+    grid-template-columns: 64px 1fr;
+    align-items: start;
+    gap: 16px;
+    padding: 16px 4px;
+    border-top: 1px solid var(--line);
+  }
+  .tag {
+    font-family: var(--sans);
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: #fff;
+    background: linear-gradient(135deg, var(--accent), var(--navy));
+    padding: 5px 0;
+    text-align: center;
+    border-radius: 6px;
+    position: relative;
+    overflow: hidden;
+  }
+  .tag::before {
+    content: "";
+    position: absolute; left: 0; top: 0; bottom: 0; width: 3px;
+    background: var(--gold);
+  }
+  .lang p { font-size: 15.5px; line-height: 1.62; color: var(--muted); }
+  .lang.ko p { font-family: var(--sans-ko); }
+  .lang p b { color: var(--navy); font-weight: 600; }
+
+  /* ===== Action ===== */
+  .action {
+    margin-top: 8px;
+    padding: 26px 34px 32px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 16px;
+  }
+  .go {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    font-family: var(--sans);
+    font-weight: 600;
+    font-size: 15px;
+    letter-spacing: 0.01em;
+    color: #fff;
+    background: linear-gradient(135deg, var(--navy) 0%, var(--navy-deep) 100%);
+    padding: 13px 22px;
+    border-radius: 10px;
+    border: 1px solid rgba(255,255,255,0.12);
+    box-shadow: 0 10px 22px -12px rgba(20,33,63,0.7);
+    transition: transform 0.18s ease, box-shadow 0.18s ease;
+    position: relative;
+    overflow: hidden;
+  }
+  .go::before {
+    content: "";
+    position: absolute; left: 0; top: 0; bottom: 0; width: 4px;
+    background: var(--gold);
+  }
+  .go:hover { transform: translateY(-2px); box-shadow: 0 16px 30px -14px rgba(20,33,63,0.75); }
+  .go .arrow { transition: transform 0.2s ease; }
+  .go:hover .arrow { transform: translateX(4px); }
+
+  .countdown {
+    font-family: var(--sans);
+    font-size: 13.5px;
+    color: var(--muted);
+  }
+  .countdown .num {
+    font-family: var(--serif);
+    font-weight: 600;
+    color: var(--navy);
+    font-size: 15px;
+    font-variant-numeric: tabular-nums;
+  }
+
+  /* progress bar */
+  .progress {
+    height: 3px;
+    background: var(--line);
+    border-radius: 3px;
+    overflow: hidden;
+    margin: 0 34px 30px;
+  }
+  .progress > span {
+    display: block;
+    height: 100%;
+    width: 0%;
+    background: linear-gradient(90deg, var(--navy), var(--gold));
+    animation: fill 6s linear forwards;
+  }
+  @keyframes fill { to { width: 100%; } }
+
+  .foot {
+    border-top: 1px solid var(--line);
+    padding: 16px 34px 22px;
+    font-family: var(--sans);
+    font-size: 11.5px;
+    color: #97a0b3;
+    letter-spacing: 0.02em;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+  .foot a { color: var(--accent); text-decoration: none; }
+  .foot a:hover { text-decoration: underline; }
+
+  @media (max-width: 520px) {
+    .body, .action { padding-left: 24px; padding-right: 24px; }
+    .progress, .foot { margin-left: 24px; margin-right: 24px; padding-left: 0; padding-right: 0; }
+    .foot { margin: 0; padding: 16px 24px 22px; }
+    .band { padding: 22px 24px 26px; }
+    .lead { font-size: 19px; }
+    .lang { grid-template-columns: 56px 1fr; gap: 12px; }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .card, .progress > span { animation: none; }
+  }
+</style>
+</head>
+<body>
+  <main class="card" role="dialog" aria-labelledby="title">
+    <div class="band">
+      <div class="mark" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M5 12h12" />
+          <path d="M13 6l6 6-6 6" />
+        </svg>
+      </div>
+      <div class="band-text">
+        <div class="eyebrow">Page Moved · 페이지 이동</div>
+        <h1 id="title">Redirecting&nbsp;you&nbsp;to&nbsp;rottoda.com</h1>
+      </div>
+    </div>
+
+    <div class="body">
+      <p class="lead">
+        This site now lives at <span class="host">rottoda.com</span>.<br />
+        이 사이트는 <span class="host">rottoda.com</span> 으로 이동되었습니다.
+      </p>
+
+      <div class="langs">
+        <div class="lang en">
+          <span class="tag">EN</span>
+          <p>You are being redirected to <b>rottoda.com</b> automatically.
+             If the page does not move on its own, please use the button below.</p>
+        </div>
+        <div class="lang ko">
+          <span class="tag">KO</span>
+          <p>잠시 후 <b>rottoda.com</b> 으로 자동 이동합니다.
+             자동으로 이동하지 않으면 아래 버튼을 눌러 주세요.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="action">
+      <a class="go" href="https://rottoda.com/">
+        Go to rottoda.com · 지금 이동
+        <span class="arrow" aria-hidden="true">→</span>
+      </a>
+      <span class="countdown" aria-live="polite">
+        Redirecting in <span class="num" id="count">6</span>s · <span id="countdownko">6</span>초 후 이동
+      </span>
+    </div>
+
+    <div class="progress" aria-hidden="true"><span></span></div>
+
+    <div class="foot">
+      <span>경북대 데이터사이언스대학원 · 로봇촉각데이터 연구실</span>
+      <span><a href="https://rottoda.com/">rottoda.com →</a></span>
+    </div>
+  </main>
+
+  <script>
+    (function () {
+      var TARGET = "https://rottoda.com/";
+      var seconds = 6;
+      var el = document.getElementById("count");
+      var elko = document.getElementById("countdownko");
+      var timer = setInterval(function () {
+        seconds -= 1;
+        if (el) el.textContent = seconds;
+        if (elko) elko.textContent = seconds;
+        if (seconds <= 0) {
+          clearInterval(timer);
+          window.location.replace(TARGET);
+        }
+      }, 1000);
+    })();
+  </script>
+</body>
+</html>
